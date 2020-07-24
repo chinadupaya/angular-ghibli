@@ -14,17 +14,18 @@ import {
 })
 export class PeopleComponent implements OnInit {
   people: People[];
+  origPeople: People[];
   @Output() valueChange = new EventEmitter();
   private searchTerms = new Subject<string>();
   search(term: string): void {
     this.searchTerms.next(term);
     this.valueChange.emit(term);
     if(term){
-      this.people = Object.assign([], this.people).filter(
+      this.people = Object.assign([], this.origPeople).filter(
         person => person.name.toLowerCase().indexOf(term.toLowerCase()) > -1
      )
     }else{
-      this.getPeople();
+      this.people = this.origPeople
     }
   }
   constructor(
@@ -36,7 +37,10 @@ export class PeopleComponent implements OnInit {
   }
   getPeople(): void{
     this.peopleService.getPeople()
-    .subscribe(people => this.people = people);
+    .subscribe(people => {
+      this.people = people;
+      this.origPeople=people;
+    });
   }
   
 

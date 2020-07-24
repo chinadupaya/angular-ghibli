@@ -4,6 +4,8 @@
     background-image: url("https://japc.kisekinohana.net/wp-content/uploads/2013/07/ghibli2013_banner.jpg");
     background-size: cover;
     font-family: 'Bebas Neue', cursive;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 a.card-link{
     color: #b3958a;

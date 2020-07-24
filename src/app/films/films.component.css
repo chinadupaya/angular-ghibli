@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .jumbotron {
-    background-image: url("https://lh3.googleusercontent.com/proxy/0JgxLPBi-k0mhIumSBsdzG5HXg7HJFwV3J-DDUh6zsdMyTb0voSOlygBz-LVXnT6t3O7vHo-ETSdyzdZw51ZIliovEprG62qkxrNxm8qpgyePEwaaENgc5jMc7k5t5-PvvKWct2W7_Kl");
+    background-image: url("https://lh3.googleusercontent.com/proxy/AVFlGGmmnwVOc0v0tXzu3uC459_bi_HLnOQSkC8E5iAswvm0IUH9RmTObLGopbLjmFgm_8Jyntr26qL4s1ANS-YSEmUsOI_1Tizit3i-U1ACPLLaO-8OZ12irOsxKjHESYc6N9JFvgBa");
     background-size: cover;
     font-family: 'Bebas Neue', cursive;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 a.card-link{
     color: #b3958a;

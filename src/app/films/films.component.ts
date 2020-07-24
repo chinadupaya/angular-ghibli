@@ -14,17 +14,19 @@ import {
 })
 export class FilmsComponent implements OnInit {
   films: Film[]
+  origFilms: Film[]
   @Output() valueChange = new EventEmitter();
   private searchTerms = new Subject<string>();
-  search(term: string): void {
+  search(term: string): void{
+    
     this.searchTerms.next(term);
     this.valueChange.emit(term);
     if(term){
-      this.films = Object.assign([], this.films).filter(
+      this.films = Object.assign([], this.origFilms).filter(
         film => film.title.toLowerCase().indexOf(term.toLowerCase()) > -1
      )
     }else{
-      this.getFilms();
+      this.films = this.origFilms
     }
   }
   constructor(
@@ -36,7 +38,10 @@ export class FilmsComponent implements OnInit {
   }
   getFilms(): void {
     this.filmService.getFilms()
-    .subscribe(films => this.films = films);
+    .subscribe(films => {
+      this.films = films;
+      this.origFilms = films
+    });
   }
 
 
