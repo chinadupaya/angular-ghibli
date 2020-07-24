@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.jumbotron {
+    background-image: url("https://lh3.googleusercontent.com/proxy/0JgxLPBi-k0mhIumSBsdzG5HXg7HJFwV3J-DDUh6zsdMyTb0voSOlygBz-LVXnT6t3O7vHo-ETSdyzdZw51ZIliovEprG62qkxrNxm8qpgyePEwaaENgc5jMc7k5t5-PvvKWct2W7_Kl");
+    background-size: cover;
+    font-family: 'Bebas Neue', cursive;
+}
+a.card-link{
+    color: #b3958a;
+}
+a.card-link:hover{
+    color: #884f39;
+}
+.card-body{
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+.card-body:hover{
+    background-color:rgb(209, 209, 209) ;
+}
+.card-body p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

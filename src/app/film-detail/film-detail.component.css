@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-.navbar{
+
+.jumbotron{
+    background-color: bisque;
     font-family: 'Bebas Neue', cursive;
 }

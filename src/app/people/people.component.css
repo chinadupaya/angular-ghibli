@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.jumbotron {
+    background-image: url("https://japc.kisekinohana.net/wp-content/uploads/2013/07/ghibli2013_banner.jpg");
+    background-size: cover;
+    font-family: 'Bebas Neue', cursive;
+}
+a.card-link{
+    color: #b3958a;
+}
+a.card-link:hover{
+    color: #884f39;
+}
+.card-body{
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+.card-body:hover{
+    background-color:rgb(209, 209, 209) ;
+}

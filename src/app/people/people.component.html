@@ -1,0 +1,30 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-light">
+      <h1 class="display-4">Ghibli Characters</h1>
+      <p class="lead">Using Ghibli API!</p>
+    </div>
+</div>
+<div class="container">
+  <div class="row">
+    <form class="col-md-4 form my-2 my-lg-0 py-3">
+      <input class="form-control mr-sm-2" #searchBox type="search" (input)="search(searchBox.value)" placeholder="Search by name" aria-label="Search">
+    </form>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-6" *ngFor="let person of people">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">{{person.name}}</h5>
+            <p class="card-text">
+                Gender: {{person.gender}} 
+                <br/>
+                Age: {{person.age}}
+            </p>
+            <p class="card-text"> 
+              Eyes: {{person.eye_color}} 
+              <br/>
+              Hair: {{person.hair_color}}</p>
+            <a routerLink="/people/{{person.id}}" class="card-link">See More</a>
+          </div>
+      </div>
+  </div>
+</div>

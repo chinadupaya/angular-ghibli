@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.image-left {
+    background-image: url("https://pm1.narvii.com/6265/654de5f7dbdb0a544102ef6c729c15d7618da291_hq.jpg");
+}
+.image{
+    width: 100%;
+    height: 100%;
+    opacity: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    filter: grayscale(100%);
+}
+.image-right {
+    background-image: url("https://i.pinimg.com/originals/42/a7/ba/42a7ba286263bb742eb17860eef424f5.jpg");
+}
+.image-left:hover, .image-right:hover{
+    filter:grayscale(0%);
+    opacity: 70%;
+}
+h1{
+    font-size: 10em;
+    font-family: 'Bebas Neue', cursive;
+}
